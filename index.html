@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Explorer</title>
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 shadow">
+      <div class="container mx-auto flex justify-between">
+        <h1 class="text-xl font-bold">NASA Explorer</h1>
+        <ul class="flex space-x-4">
+          <li><button data-feature="apod" class="feature-btn">APOD</button></li>
+          <li>
+            <button data-feature="earth" class="feature-btn">Earth View</button>
+          </li>
+          <li>
+            <button data-feature="rover" class="feature-btn">Mars Rover</button>
+          </li>
+          <li>
+            <button data-feature="facts" class="feature-btn">Facts</button>
+          </li>
+          <li>
+            <button data-feature="solar" class="feature-btn">
+              Solar System
+            </button>
+          </li>
+          <li><button data-feature="news" class="feature-btn">News</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Content Area -->
+
+    <div id="content" class="container mx-auto mt-8 p-4">
+      <h2 class="text-2xl font-bold">Welcome to NASA Explorer</h2>
+      <p class="text-gray-400">
+        Click on a feature above to explore space data!
+      </p>
+      <!-- Space Weather Dashboard -->
+      <div id="space-weather" class="mt-8">
+        <h3 class="text-xl font-bold text-center mb-4">
+          Space Weather Dashboard
+        </h3>
+        <div id="weather-data" class="text-center">
+          Loading space weather data...
+        </div>
+      </div>
+    </div>
+
+
+   
+  </body>
+</html>
